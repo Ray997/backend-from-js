@@ -1,0 +1,19 @@
+{
+  "name": "backend-from-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Exercises and an automatic checker for the Backend From JS video series",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "check": "node checker/check.ts",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

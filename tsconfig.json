@@ -1,0 +1,22 @@
+{
+  // The settings file for tsc, the TypeScript type checker.
+  "compilerOptions": {
+    // Modern JavaScript, run by Node.js as ES modules.
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // Node runs .ts files by stripping the types. tsc only checks; it writes no files.
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+
+    // Strict mode: the strictest checks, on for the whole series.
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["exercises", "tests", "checker", "play"]
+}

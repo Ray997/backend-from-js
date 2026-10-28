@@ -1,0 +1,5 @@
+{
+  // play/ is where you try things from the videos. Same settings as the whole course.
+  "extends": "../tsconfig.json",
+  "include": ["."]
+}

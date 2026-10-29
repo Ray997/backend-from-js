@@ -67,8 +67,29 @@ npx tsc
 
 No output means no type errors.
 
+Two examples you can run:
+
+- `play/server.ts` (lesson 06): a tiny API that runs inside your own program, on localhost.
+- `play/api.ts` (lessons 08 and 09): the events API with Express and Zod. Start it with `node api.ts` inside `play/`,
+  then send it a request from a second terminal:
+
+  ```bash
+  curl -X POST localhost:3000/events -H "content-type: application/json" -d @good.json
+  ```
+
+  `garbage.json`, `almost.json`, `purchase.json` and `text-amount.json` are the other bodies from the videos.
+
 ## Lessons
 
 | # | Lesson |
 |---|---|
 | 01 | Why TypeScript exists: types vanish at runtime, `tsc`, inference, `any` vs `unknown` |
+| 02 | Narrowing and discriminated unions, `never` and `assertNever` |
+| 03 | Function and object types: optional, default and rest parameters, `readonly`, index signatures, `satisfies` |
+| 04 | Generics: type parameters, constraints with `extends`, `Result<T, E>` |
+| 05 | Utility types: `keyof`, `T[K]`, `Partial`, `Pick`, `Omit`, `Record`, `ReturnType` |
+| 06 | Async code and errors: `Promise`, `fetch`, `catch (e)` is `unknown`, Error classes, the Result pattern |
+| 07 | Modules: CommonJS vs ES modules, `nodenext`, `.d.ts` files, `@types`, typing a library that has none |
+| 08 | A typed API with Express 5: routes, `Request` and `Response` types, middleware |
+| 09 | Zod: checking data at runtime, `safeParse`, `z.infer`, query strings with `z.coerce` |
+| 10 | `tsconfig.json` line by line, `strict`, building a typed package for npm (`pulse`) |

@@ -1,0 +1,19 @@
+{
+  // pulse's own settings for tsc. For now, a copy of the course's: tsc only checks, and writes no files.
+  // Exercise 5 turns it into a build: tsc writes the package's JavaScript and .d.ts files into dist/.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "lib": ["es2022"],
+    "types": [],
+
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
